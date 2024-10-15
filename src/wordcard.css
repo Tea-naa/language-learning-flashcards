@@ -1,0 +1,45 @@
+.word-card {
+    border: 3px dashed #6a5acd; /* Dashed purple border for fun */
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    background-color: #e0f7fa; /* Light cyan for a cheerful feel */
+    display: inline-block;
+    width: 260px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    transition: transform 0.4s, box-shadow 0.3s ease, border-radius 0.3s ease;
+    border-radius: 25px; /* Increased border-radius for a more fun shape */
+}
+
+.word-card:hover {
+    transform: rotate(5deg) scale(1.08); /* Slight tilt and enlarge for more energy */
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 30px; /* Smooth rounded corners on hover */
+}
+
+.delete-card {
+    font-weight: bold;
+    font-size: 18px;
+    border: 2px solid black;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #e0e0e0; /* Light gray background for a softer look */
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.delete-card:hover {
+    background-color: #ff6347; /* Coral on hover */
+    transform: scale(1.1); /* Slightly increase size on hover for emphasis */
+}
